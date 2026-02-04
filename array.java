@@ -5,6 +5,16 @@ public class array {
         {4,5,6},
         {7,8,9}
     };
+    int [][][] arr3D= {
+        {
+            {1,2},
+            {3,4}
+        },
+        {
+            {5,6},
+            {7,8}
+        }
+    };
 
     //Method to display array elements
     void display(){
@@ -20,10 +30,22 @@ public class array {
             System.out.println();
         }
     }
+    void display3D(){
+        for(int i=0;i<arr3D.length;i++){
+            for(int j=0;j<arr3D[i].length;j++){
+                for(int k=0;k<arr3D[i][j].length;k++){
+                    System.out.print(arr3D[i][j][k]+" ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+    }
 
     public static void main(String[] args) {
         array obj=new array();
         obj.display();
         obj.display2D();
+        obj.display3D();
     }
 }
