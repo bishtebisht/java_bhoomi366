@@ -9,6 +9,18 @@ class Person{
     }
 }
 
+
+class Animal{
+    String species;
+    String name;
+
+    void displayAnimal(){
+        System.out.println("Species: "+species);
+        System.out.println("Name: "+name);
+    }
+}
+
+
 //sub class
 class Student extends Person{
     int rollNo;
@@ -19,6 +31,20 @@ class Student extends Person{
 }
 
 
+class Dog extends Animal{
+    String owner;
+    void displayDog(){
+        System.out.println("owner: "+owner);
+    }
+}
+
+class puppy extends Dog{
+
+    void displayPuppy(){
+        System.out.println("Woof Woof");
+    }
+}
+
 public class inheritance {
     public static void main(String[] args) {
         Student s= new Student();
@@ -28,6 +54,14 @@ public class inheritance {
 
         s.displayPerson();
         s.displayStudent();
+
+        puppy p= new puppy();
+        p.species = "doberman";
+        p.name = "Bambam";
+        p.owner = "Jungkook";
+        p.displayAnimal();
+        p.displayDog();
+        p.displayPuppy();
     }
     
 }
