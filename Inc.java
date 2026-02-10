@@ -17,7 +17,7 @@ public class Inc {
     // }
     // public String getName() {
     //     return name;
-    // }
+    // }clear
     // public int getMarks() {
     //     return marks;
     // }
