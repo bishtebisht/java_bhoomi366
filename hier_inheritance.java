@@ -1,3 +1,4 @@
+//BHOOMI BISHT 2400320100366
 class Animal{
     String species;
     String name;
@@ -19,8 +20,6 @@ class Cat extends Animal{
     }
 }
 public class hier_inheritance {
-
-    
     public static void main(String[] args) {
         Dog d= new Dog();
         Cat c= new Cat();
