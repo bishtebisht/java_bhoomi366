@@ -1,4 +1,3 @@
-
 import java.io.*;
 
 //works for checked error
